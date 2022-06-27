@@ -1,7 +1,7 @@
 # Hamster Wheel Tracker based on ATtiny402/412
 The Hamster Wheel Tracker is a simple fitness monitoring device for your hamster. The speed and distance traveled by the hamster in the wheel are measured using two opposing neodymium magnets with complementary poles, which run past the device's bipolar Hall sensor switch. The recorded values are displayed on an OLED. The button is used to reset the stored values for the maximum speed reached and the maximum distance traveled in a day. The total distance covered since the device was started up is retained. The corresponding values are stored in the EEPROM so that they are not lost after a power supply interruption.
 
-- Design Files (EasyEDA): https://easyeda.com/wagiminator/
+- Design Files (EasyEDA): https://oshwlab.com/wagiminator/attiny412-hamster-wheel-tracker
 
 ![pic3.jpg](https://raw.githubusercontent.com/wagiminator/ATtiny412-HamsterTracker/main/documentation/HamsterTracker_pic3.jpg)
 
