@@ -193,7 +193,6 @@ const uint8_t OLED_FONT_BIG[] = {
 };
 
 // Character definitions
-#define COLON   15
 #define SPACE   10
 
 // OLED BCD conversion array
@@ -293,7 +292,7 @@ void OLED_printDec(uint32_t value, uint8_t digits) {
 }
 
 // ===================================================================================
-// Speed and Distance Measurement using TCA and Pin Chane Interrupt
+// Speed and Distance Measurement using TCA and Pin Change Interrupt
 // ===================================================================================
 
 volatile uint16_t s_counter = 0;                  // speed counter

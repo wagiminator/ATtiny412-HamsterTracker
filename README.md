@@ -22,7 +22,7 @@ The pin change interrupt is activated on the pin that is connected to the output
 
 The passing of the magnets under the Hall sensor triggers a pin change interrupt, as long as both magnets pass alternately. Passing the same magnet multiple times does not change the signal of the Hall sensor and therefore does not cause an interrupt. In this way, a "swinging" of the hamster wheel is not mistakenly recognized as a movement.
 
-In the pin change interrupt service routine, the value of counter A is read out and buffered. The speed is later determined from this value in the main program. The counter is then reset. the variable for the distance traveled is increased by half the wheel circumference. If the wheel does not turn for a few seconds, the timer overflow interrupt is triggered, in the service routine of which the timer is stopped.
+In the pin change interrupt service routine, the value of counter A is read out and buffered. The speed is later determined from this value in the main program. The counter is then reset. The variable for the distance traveled is increased by half the wheel circumference. If the wheel does not turn for a few seconds, the timer overflow interrupt is triggered, in the service routine of which the timer is stopped.
 
 ```c
 volatile uint16_t s_counter = 0;                  // speed counter
